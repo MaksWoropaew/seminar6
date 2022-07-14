@@ -8,7 +8,7 @@ namespace Task1
     class Program
     {
         static Random random = new Random();
-        void FillArray(int[] array, int min, int max) // генерация массива с параметрами передоваемыми в метод
+        static void FillArray(int[] array, int min, int max) // генерация массива с параметрами передоваемыми в метод
         {
             for (int i = 0; i < array.Length; i++ )
             {
@@ -16,7 +16,7 @@ namespace Task1
             }
         } 
 
-        void WriteArray(int[] array) //печать массива
+        static void WriteArray(int[] array) //печать массива
         {
             for (int i = 0; i < array.Length; i++ )
             {
@@ -24,7 +24,7 @@ namespace Task1
             }
             Console.WriteLine();
         }
-        int QuantityPositive(int[] array)// счетчик четных чисел в массиве
+        static int QuantityPositive(int[] array)// счетчик четных чисел в массиве
         {
             int quantity = 0;
             for (int i = 0; i < array.Length; i++ )
@@ -36,7 +36,7 @@ namespace Task1
             }
             return quantity;
         }
-        static void Main(string[] asgs) //инициализация массива(10 элементов), 
+        static void Main() //инициализация массива(10 элементов), 
         //печать его,присвоение счетчика в переменную и вывод этого числа.
         {
             int[] numbers = new int[10];
